@@ -16,6 +16,16 @@
             background: #ffffff;
             font-family: 'Georgia', serif;
             overflow: hidden;
+            flex-direction: column;
+        }
+
+        #heading {
+            display: flex;
+            justify-content: center;
+            font-family: courier;
+            font-weight: 600;
+            font-size: 20px;
+            transition: transform 0.6s ease;
         }
 
         /* Envelope */
@@ -73,8 +83,13 @@
 
 <body>
     <!-- Envelope -->
-    <span>Mission Apology</span>
-    <img id="envelope" src="sending-envelope2.jpg" alt="Envelope">
+    <div id="heading">
+        <span>Mission Apology</span>
+    </div>
+
+    <div>
+        <img id="envelope" src="sending-envelope.jpg" alt="Envelope">
+    </div>
 
     <!-- Letter -->
     <div id="letter-container">
@@ -83,6 +98,7 @@
     </div>
 
     <script>
+        const heading = document.getElementById("heading");
         const envelope = document.getElementById("envelope");
         const letterContainer = document.getElementById("letter-container");
         const letter = document.getElementById("letter");
@@ -105,6 +121,7 @@
 
         envelope.addEventListener("click", () => {
             envelope.style.transform = "scale(0)";
+            heading.style.transform = "scale(0)";
             setTimeout(() => {
                 letterContainer.style.display = "flex";
                 typeMessage(message, letter);
@@ -116,6 +133,7 @@
             letter.textContent = "";
             letterContainer.style.display = "none";
             envelope.style.transform = "scale(1)";
+            heading.style.transform = "scale(1)";
         });
     </script>
 </body>
