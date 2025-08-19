@@ -75,16 +75,16 @@ body {
     left: 20px;
     font-weight: bold;
     font-family: courier;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
 }
 
 #date2 {
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 20px;
     font-weight: bold;
     font-family: courier;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
 }
 
 /* Close button */
