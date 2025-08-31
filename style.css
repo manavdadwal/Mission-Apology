@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     background: #ffffff;
-    font-family: "Georgia", serif;
+    font-family: "Gloria Hallelujah", cursive;
     overflow: hidden;
     flex-direction: column;
 }
@@ -14,7 +14,7 @@ body {
 #heading {
     display: flex;
     justify-content: center;
-    font-family: courier;
+    font-family: "Gloria Hallelujah", cursive;
     font-weight: 600;
     font-size: 20px;
     transition: transform 0.6s ease;
@@ -63,18 +63,18 @@ body {
     white-space: pre-wrap;
     border-left: 3px solid #74c6d1;
     padding-left: 15px;
-    font-family: courier;
+    font-family: "Gloria Hallelujah", cursive;
     font-weight: 600;
     max-height: 60vh;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
-#date {
+#date1 {
     position: absolute;
     top: 40px;
     left: 20px;
     font-weight: bold;
-    font-family: courier;
+    font-family: "Gloria Hallelujah", cursive;
     font-size: 0.8rem;
 }
 
@@ -83,7 +83,7 @@ body {
     top: 60px;
     left: 20px;
     font-weight: bold;
-    font-family: courier;
+    font-family: "Gloria Hallelujah", cursive;
     font-size: 0.8rem;
 }
 
@@ -98,4 +98,27 @@ body {
     font-weight: bold;
     border: none;
     border-radius: 20px;
+    font-family: "Gloria Hallelujah", cursive;
+}
+
+#ps-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: max-content;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: pink;
+    padding: 8px 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 340px) and (max-width: 1000px) {
+    #letter {
+        overflow-y: auto;
+    }
 }
