@@ -22,7 +22,7 @@ const date1Val = `Created Date | 18.08.2025`;
 const date2Val = `Today's Date | ${customFormat}`;
 
 const psTextVal = `P.S.`;
-const nameTextVal = `Manav Dadwal`;
+const nameTextVal = `istg… sending this took a lot of guts`;
 
 let typingInterval;
 
@@ -56,7 +56,10 @@ envelope.addEventListener("click", () => {
             typeMessage(date2Val, date2, 100, () => {
                 typeMessage(message, letter, 50, () => {
                     psDetails.style.display = "block";
+                    psText.style.display = "block";
+                    nameText.style.display = "none";
                     typeMessage(psTextVal, psText, 100, () => {
+                        nameText.style.display = "block";
                         typeMessage(nameTextVal, nameText, 100);
                     });
                 });
@@ -78,6 +81,7 @@ closeBtn.addEventListener("click", () => {
     letter.textContent = "";
     heading.style.transform = "scale(1)";
     date2.textContent = "";
+    psDetails.style.display = "none";
     psText.style.display = "none";
     nameText.style.display = "none";
 });
