@@ -16,7 +16,7 @@ const day = date.getDate().toString().padStart(2, "0");
 const customFormat = `${day}.${month}.${year}`;
 
 const headerMessage = `Mission Apology.`;
-const message = `At this very moment, you’re probably thinking, 'what is this guy even up to now?'.\nBut honestly, I do realized that what I did was definitely not cool.\nNot being used to these things, the thought was it might work, but yeah… that turned out pretty foolish.\nAnd about the whole BKC thing, I wasn’t even there that day 😅. It was just meant as a tease, something fun, but never imagined it might give you the wrong impression (which I truly never meant).\nProbably ended up looking way more silly than necessary, but that’s not really who I am.\nThe only thought was to build a good friendship, and it would be a shame to ruin the friendship jo “shuru hote hi khatam hogayi.”\nOh, and since you know punjabi too (source : LinkedIn), here’s the official apology in punjabi:\n'Oye sorry yaar, hun gussa thalle rakh de aur mainu maaf kardey.”\nI should’ve said this that day itself, but things felt a little heated, so I thought, 'chalo, better save it for later.'
+const message = `Hey ,\nAt this very moment, you’re probably thinking, 'what is this guy even up to now?'.\nBut honestly, I do realized that what I did was definitely not cool.\nNot being used to these things, the thought was it might work, but yeah… that turned out pretty foolish.\nI know you already had a lot going on, starting fresh and settling into a new place. And right in the middle of that, I showed up in the chat without realizing it could just make things more complicated for you. Honestly, I’m not that “cool guy” who always knows what to say, just a simple one, and definitely not great at chatting. I’m more of an in-person kind of guy.\nAnd also about the whole BKC thing, I wasn’t even there that day 😅. It was just meant as a tease, something fun, but never imagined it might give you the wrong impression (which I truly never meant). Probably ended up looking way more silly than necessary, but that’s not really who I am.\nThe only thought was to build a good friendship, and it would be a shame to ruin the friendship jo “shuru hote hi khatam hogayi.”\nOh, and since you know punjabi too (source : LinkedIn), here’s the official apology in punjabi:\n'Oye sorry yaar, hun gussa thalle rakh de aur mainu maaf kardey.”\nI should’ve said this that day itself, but things felt a little heated, so I thought, 'chalo, better save it for later.'
         `;
 const date1Val = `Created Date | 18.08.2025`;
 const date2Val = `Today's Date | ${customFormat}`;
@@ -55,7 +55,7 @@ envelope.addEventListener("click", () => {
         typeMessage(date1Val, date1, 100, () => {
             typeMessage(date2Val, date2, 100, () => {
                 typeMessage(message, letter, 50, () => {
-                    psDetails.style.display = "block";
+                    psDetails.style.display = "flex";
                     psText.style.display = "block";
                     nameText.style.display = "none";
                     typeMessage(psTextVal, psText, 100, () => {
